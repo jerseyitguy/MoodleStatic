@@ -32,7 +32,7 @@ body {
 .logo {
     font-size: 36px;
     font-weight: bold;
-    color: #E4002B; /* Official BDO Red */
+    color: #E4002B;
     letter-spacing: -1px;
 }
 
@@ -71,7 +71,6 @@ body {
     position: relative;
     width: 100%;
     height: 350px;
-    /* Reusing your image, added a fallback dark overlay to ensure text readability */
     background: url('BDO-Set-39-DesktopHeader.jpg') no-repeat center center;
     background-size: cover;
     background-color: #333; 
@@ -99,7 +98,7 @@ body {
     text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
 
-/* Main Layout: 2 Columns similar to BDO site */
+/* Main Layout */
 .container {
     display: flex;
     max-width: 1200px;
@@ -133,7 +132,7 @@ body {
     color: #444;
 }
 
-/* Cards (Services) */
+/* Cards */
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -184,7 +183,7 @@ body {
     text-decoration: none;
     padding: 12px 24px;
     font-weight: bold;
-    border-radius: 3px; /* BDO uses squarer buttons rather than heavy pills */
+    border-radius: 3px;
     margin-top: 15px;
     transition: background 0.3s;
 }
@@ -218,26 +217,26 @@ body {
 
 <body>
 
-<header class="header">
+<div class="header">
     <div class="logo">BDO</div>
-    <nav class="nav">
+    <div class="nav">
         <a href="#">Services</a>
         <a href="#">Industries</a>
         <a href="#">Insights</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
-    </nav>
-</header>
+    </div>
+</div>
 
 <div class="breadcrumb">
     <a href="#">BDO Jersey</a> / <a href="#">Services</a> / <a href="#">Advisory</a> / Training and Development
 </div>
 
-<section class="hero">
+<div class="hero">
     <div class="hero-content">
         <h1>Training and Development</h1>
     </div>
-</section>
+</div>
 
 <div class="container">
     <div class="main-content">
@@ -261,18 +260,17 @@ body {
             </div>
 
             <div class="card">
-                <h3>Excel & Power BI</h3>
+                <h3>Excel &amp; Power BI</h3>
                 <p>Build reporting, analysis and data visualisation skills.</p>
             </div>
 
             <div class="card">
-                <h3>Copilot & AI</h3>
+                <h3>Copilot &amp; AI</h3>
                 <p>Learn safe and effective AI adoption techniques.</p>
             </div>
         </div>
     </div>
 
-    <!-- Right Rail Sidebar -->
     <div class="sidebar">
         <div class="contact-box">
             <h3>Ready to get started?</h3>
