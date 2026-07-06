@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Training and Development - BDO</title>
+
+<style>
+/* Base Styles & Typography */
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', Trebuchet, sans-serif;
+    color: #333333;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+/* Header */
+.header {
+    background: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #E4002B; /* Official BDO Red */
+    letter-spacing: -1px;
+}
+
+.nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #E4002B;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    padding: 15px 5%;
+    background: #f4f4f4;
+    font-size: 13px;
+    color: #666;
+}
+
+.breadcrumb a {
+    color: #333;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    /* Reusing your image, added a fallback dark overlay to ensure text readability */
+    background: url('BDO-Set-39-DesktopHeader.jpg') no-repeat center center;
+    background-size: cover;
+    background-color: #333; 
+    display: flex;
+    align-items: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+    position: relative;
+    padding: 0 5%;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+/* Main Layout: 2 Columns similar to BDO site */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 5%;
+    gap: 50px;
+}
+
+.main-content {
+    flex: 2;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+/* Content Styling */
+.main-content h2 {
+    color: #333333;
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #E4002B;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.main-content p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+/* Cards (Services) */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background: #f9f9f9;
+    border-left: 4px solid #E4002B;
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #333333;
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* Sidebar Contact Box */
+.contact-box {
+    background: #f4f4f4;
+    padding: 30px;
+    border-top: 4px solid #E4002B;
+}
+
+.contact-box h3 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #333;
+}
+
+.button {
+    display: inline-block;
+    background: #E4002B;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-weight: bold;
+    border-radius: 3px; /* BDO uses squarer buttons rather than heavy pills */
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #c30025;
+}
+
+/* Responsive adjustments */
+@media(max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav {
+        margin-top: 15px;
+    }
+    .nav a {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+    .hero-content h1 {
+        font-size: 32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">BDO</div>
+    <nav class="nav">
+        <a href="#">Services</a>
+        <a href="#">Industries</a>
+        <a href="#">Insights</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="breadcrumb">
+    <a href="#">BDO Jersey</a> / <a href="#">Services</a> / <a href="#">Advisory</a> / Training and Development
+</div>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Training and Development</h1>
+    </div>
+</section>
+
+<div class="container">
+    <div class="main-content">
+        <h2>Boosting Productivity with Microsoft 365 Expertise</h2>
+        <p>
+            Help your teams get more from Microsoft 365 through practical,
+            hands-on learning. From Outlook and Teams to Excel, Power BI,
+            automation and AI, training can be tailored to your organisation.
+        </p>
+
+        <h2>Empowering Continuous Learning</h2>
+        <p>
+            Support long-term adoption through learning pathways, e-learning,
+            knowledge bases, instructional videos and on-demand resources.
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Microsoft Teams</h3>
+                <p>Improve collaboration, meetings and communication.</p>
+            </div>
+
+            <div class="card">
+                <h3>Excel & Power BI</h3>
+                <p>Build reporting, analysis and data visualisation skills.</p>
+            </div>
+
+            <div class="card">
+                <h3>Copilot & AI</h3>
+                <p>Learn safe and effective AI adoption techniques.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Rail Sidebar -->
+    <div class="sidebar">
+        <div class="contact-box">
+            <h3>Ready to get started?</h3>
+            <p>
+                Contact us to discuss a tailored training programme for your team. Whether it's a targeted session or a full rollout, let's build a program that works for you.
+            </p>
+            <a href="#" class="button">Contact Us</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
